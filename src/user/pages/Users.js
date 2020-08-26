@@ -18,6 +18,13 @@ function Users() {
         'https://image.shutterstock.com/image-vector/question-mark-on-head-vector-600w-1089659894.jpg',
       places: 1,
     },
+    {
+      id: 'u3',
+      name: 'Milani Padilla',
+      image:
+        'https://image.shutterstock.com/image-vector/question-mark-on-head-vector-600w-1089659894.jpg',
+      places: 2,
+    },
   ];
 
   return <UsersList items={USERS} />;
