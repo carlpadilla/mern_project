@@ -6,6 +6,8 @@ import {
   Redirect,
   Switch,
 } from 'react-router-dom';
+
+// Components
 import Users from './user/pages/Users';
 import NewPlace from './places/pages/NewPlace';
 
