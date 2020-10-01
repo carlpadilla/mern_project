@@ -5,7 +5,7 @@ import Button from '../../shared/components/FormElements/Button';
 import {
   VALIDATOR_MINLENGTH,
   VALIDATOR_REQUIRE,
-} from '../../shared/utils/validator';
+} from '../../shared/utils/validators';
 import { useForm } from '../../shared/hooks/form-hooks';
 import './PlaceForm.css';
 
