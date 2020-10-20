@@ -6,7 +6,7 @@ const DUMMY_PLACES = [
   {
     id: 'p1',
     title: 'Empire state building',
-    description: 'cool place',
+    description: 'cool place!',
     location: {
       lat: 40.7484474,
       lng: -73.9871516
