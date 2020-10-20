@@ -30,7 +30,7 @@ function NewPlace() {
 
   const placeSubmitHandler = (event) => {
     event.preventDefault();
-    console.log(formState.inputs); // connect to backend
+    console.log(formState.inputs);
   };
 
   return (
