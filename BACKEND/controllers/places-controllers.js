@@ -18,17 +18,17 @@ let DUMMY_PLACES = [
   
 
 // Get Places by ID
-const getPlaceById = (req, res, next) => {
+const getPlacesById = (req, res, next) => {
     // console.log('GET Request in Places');
     const placeId = req.params.pid
-    const place = DUMMY_PLACES.find(p => {
+    const places = DUMMY_PLACES.filter(p => {
       return p.id === placeId
     })
   
-    if(!place){
-      throw new HttpError('Could not find a place for provided ID', 404)
+    if(!places || places.length === 0){
+      throw new HttpError('Could not find a places for provided ID', 404)
     }
-    res.json({ place });
+    res.json({ places });
   }
 
 
@@ -90,7 +90,7 @@ const deletePlace = (req, res, next) => {
 }
 
 
-exports.getPlaceById = getPlaceById
+exports.getPlacesById = getPlacesById
 exports.getPlaceByUserId = getPlaceByUserId
 exports.createPlace = createPlace
 exports.updatePlace = updatePlace
