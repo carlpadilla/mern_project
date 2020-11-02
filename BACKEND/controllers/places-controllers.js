@@ -27,7 +27,7 @@ const getPlacesById = (req, res, next) => {
     })
   
     if(!places || places.length === 0){
-      throw new HttpError('Could not find a places for provided ID', 404)
+      throw new HttpError('Could not find a place for provided ID', 404)
     }
     res.json({ places });
   }
