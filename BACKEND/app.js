@@ -30,9 +30,9 @@ app.use((error, req, res, next) => {
 mongoose
   .connect(process.env.URL, { useNewUrlParser: true, useUnifiedTopology: true })
   .then(() => {
-    console.log('+++ Database connected! +++');
+    console.log('** Database connected.. **');
     app.listen(5000);
   })
-  .catch(() => {
-    console.log('connection error');
+  .catch((err) => {
+    console.error('connection error:', err);
   });
