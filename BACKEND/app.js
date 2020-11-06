@@ -3,8 +3,10 @@ const bodyParser = require('body-parser');
 const mongoose = require('mongoose');
 require('dotenv').config();
 
+// routes
 const placesRoutes = require('./routes/places-routes');
 const usersRoutes = require('./routes/users-routes');
+// Error handling
 const HttpError = require('./models/http-error');
 
 const app = express();
